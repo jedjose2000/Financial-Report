@@ -43,7 +43,7 @@ function computeTransaction($transactions){
     $totalIncome = 0;
     $totalExpenses = 0;
     foreach ($transactions as $key => $value){
-        $temp = str_replace([',','$'], '', $value['amount']); // Removing commas for numeric consistency
+        $temp = str_replace([',','$'], '', $value['amount']);
         if($temp >= 0){
             $totalIncome += $temp;
         }else{

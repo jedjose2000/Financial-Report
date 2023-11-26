@@ -58,15 +58,15 @@
         <tfoot>
             <tr>
                 <th colspan="3">Total Income:</th>
-                <td><?php echo '$'. number_format($computedTransactions['totalIncome'],2,'.',',')  ?></td>
+                <td><?php echo '$'. number_format($data['totalIncome'],2,'.',',')  ?></td>
             </tr>
             <tr>
                 <th colspan="3">Total Expense:</th>
-                <td><?php echo '-$'. number_format($computedTransactions['totalExpenses'],2,'.',',') ?></td>
+                <td><?php echo '-$'. number_format($data['totalExpenses'],2,'.',',') ?></td>
             </tr>
             <tr>
                 <th colspan="3">Net Total:</th>
-                <td><?php echo '$'. number_format($netIncome,2,'.',',') ?></td>
+                <td><?php echo '$'. number_format($data['netIncome'],2,'.',',') ?></td>
             </tr>
         </tfoot>
     </table>
