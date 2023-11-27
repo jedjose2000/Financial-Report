@@ -15,12 +15,6 @@ require APP_PATH . 'App.php';
 $transactionsArray = getAllTransactions();
 $computedTransactions = computeTransaction($transactionsArray);
 
-$data = [
-    'totalIncome' => $computedTransactions['totalIncome'],
-    'totalExpenses' => $computedTransactions['totalExpenses'],
-    'netIncome' => $netIncome = $computedTransactions['totalIncome'] - $computedTransactions['totalExpenses']
-];
-
 require VIEWS_PATH . 'transactions.php';
 
 

@@ -52,7 +52,8 @@ function computeTransaction($transactions){
     }
     return $data = [
         'totalIncome'=> $totalIncome,
-        'totalExpenses'=> $totalExpenses
+        'totalExpenses'=> $totalExpenses,
+        'netIncome'=> $totalIncome - $totalExpenses
     ];
 }
 
