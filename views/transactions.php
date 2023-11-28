@@ -41,7 +41,7 @@
             <?php foreach ($transactionsArray as $key => $value): ?>
                 <tr>
                     <td>
-                        <?= $value['date']; ?>
+                        <?= formatDate($value['date']); ?>
                     </td>
                     <td>
                         <?= $value['check']; ?>

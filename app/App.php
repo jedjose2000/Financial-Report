@@ -57,3 +57,7 @@ function computeTransaction($transactions){
     ];
 }
 
+function formatDate(string $date){
+    return date('M j, Y', strtotime($date));
+}
+
